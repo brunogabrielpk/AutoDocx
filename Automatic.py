@@ -154,15 +154,15 @@ for index, row in df.iterrows():
     rMCeb.add_break()
     rMCeb.add_break()
     pFiller9 = doc.add_paragraph()
-    rfiller9 = pFiller9.add_run('Diagrama posicional\t: ')
+    rfiller9 = pFiller9.add_run('Diagrama posicional \t: ')
     rfiller9.font.size = Pt(14)
     rfiller9.font.name = 'Calibri'
     pFiller10 = doc.add_paragraph()
-    rFiller10 = pFiller10.add_run('Amplitude média    \t: ')
+    rFiller10 = pFiller10.add_run('Amplitude média \t: ')
     rFiller10.font.size = Pt(14)
     rFiller10.font.name = 'Calibri'
     pFiller11 = doc.add_paragraph()
-    rFiller11 = pFiller11.add_run('Espectro dinâmico  \t:ritmo ' +
+    rFiller11 = pFiller11.add_run('Espectro dinâmico \t:ritmo ' +
                                   'dominante posterior na frequência de' +
                                   ' {} Hz.'.format(row.Freq))
     rFiller11.font.size = Pt(14)
@@ -172,15 +172,15 @@ for index, row in df.iterrows():
     rFiller12.font.size = Pt(14)
     rFiller12.font.name = 'Calibri'
     pFiller13 = doc.add_paragraph()
-    rFiller13 = pFiller13.add_run('Relação alfa/teta  \t\t: normal.')
+    rFiller13 = pFiller13.add_run('Relação alfa/teta\t\t: normal.')
     rFiller13.font.size = Pt(14)
     rFiller13.font.name = 'Calibri'
     pFiller14 = doc.add_paragraph()
-    rFiller14 = pFiller14.add_run('Diferença espectral\t: ')
+    rFiller14 = pFiller14.add_run('Diferença espectral \t: ')
     rFiller14.font.size = Pt(14)
     rFiller14.font.name = 'Calibri'
     pFiller15 = doc.add_paragraph()
-    rFiller15 = pFiller15.add_run('Mapa de frequências\t: ')
+    rFiller15 = pFiller15.add_run('Mapa de frequências \t: ')
     rFiller15.font.size = Pt(14)
     rFiller15.font.name = 'Calibri'
     doc.save('Resultado/' + row.Nome + '.docx')
