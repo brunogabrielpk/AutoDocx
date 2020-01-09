@@ -162,17 +162,17 @@ for index, row in df.iterrows():
     rFiller10.font.size = Pt(14)
     rFiller10.font.name = 'Calibri'
     pFiller11 = doc.add_paragraph()
-    rFiller11 = pFiller11.add_run('Espectro dinâmico  \t: ritmo' +
+    rFiller11 = pFiller11.add_run('Espectro dinâmico  \t:ritmo ' +
                                   'dominante posterior na frequência de' +
                                   ' {} Hz.'.format(row.Freq))
     rFiller11.font.size = Pt(14)
     rFiller11.font.name = 'Calibri'
     pFiller12 = doc.add_paragraph()
-    rFiller12 = pFiller12.add_run('Histograma         \t:ritmo dominante posterior alfa.')
-    rFiller12.font.size = Pgirt(14)
+    rFiller12 = pFiller12.add_run('Histograma\t\t\t:ritmo dominante posterior alfa.')
+    rFiller12.font.size = Pt(14)
     rFiller12.font.name = 'Calibri'
     pFiller13 = doc.add_paragraph()
-    rFiller13 = pFiller13.add_run('Relação alfa/teta  \t: normal.')
+    rFiller13 = pFiller13.add_run('Relação alfa/teta  \t\t: normal.')
     rFiller13.font.size = Pt(14)
     rFiller13.font.name = 'Calibri'
     pFiller14 = doc.add_paragraph()
